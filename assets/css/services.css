@@ -124,12 +124,6 @@
 }
 
 @media all and (max-width: 1000px) {
-<<<<<<< HEAD
-  .container {
-    margin: 0 30px;
-  }
-=======
->>>>>>> 11ee055 (Update)
 
   #kolom-2{
     float: none;
@@ -149,21 +143,15 @@
     text-align: center;
   }
 
-<<<<<<< HEAD
-  .btn-explore {
-=======
   .container-services {
     text-align: center;
   }
 
   /* .btn-explore {
->>>>>>> 11ee055 (Update)
     float: none;
     display: flex;
     justify-content: center;
     width: 100%;
-<<<<<<< HEAD
-=======
   } */
 
   .btn-explore {
@@ -183,7 +171,6 @@
       color: white;
       font-weight: bold;
       text-decoration: none;
->>>>>>> 11ee055 (Update)
   }
 
   .kotak-list {
@@ -251,8 +238,6 @@
   .list {
     margin: 20px;
   }
-<<<<<<< HEAD
-=======
 
   .btn-explore {
       background-color: darkorchid;
@@ -272,5 +257,4 @@
       font-weight: bold;
       text-decoration: none;
   }
->>>>>>> 11ee055 (Update)
 }
