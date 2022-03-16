@@ -197,10 +197,6 @@
 }
 
 @media all and (max-width: 670px) {
-  .container {
-    margin: 0 10px;
-  }
-
 
   #kolom-dua {
     float: none;
