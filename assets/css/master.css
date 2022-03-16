@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --warna: rgb(105, 108, 162);
+  --fs: 14px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 20px 0 10px 0;
+  background-color: rgb(246, 245, 255);
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: rgb(31, 36, 113);
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--fs);
+  width: 45%;
+}
+
+.links a {
+  color: rgb(105, 108, 162)
+}
+
+.links a:hover {
+  font-size: 18px;
+}
+
+.links1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--fs);
+  width: 45%;
+}
+
+.links1 a {
+  color: rgb(105, 108, 162)
+}
+
+.links1 a:hover {
+  font-size: 18px;
+}
+
+.links-2 a:hover {
+  font-size: 18px;
+}
+
+.login {
+  font-size: 14px;
+  color: var(--warna);
+  margin-right: 15px;
+}
+
+.try {
+  font-size: 14px;
+  color: rgb(105, 108, 162);
+  border: 2px solid rgb(194, 180, 255);
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(150, 126, 255);
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.main {
+  background-color: rgb(246, 245, 255);
+}
+
+.home-left {
+  flex: 0 0 50%;
+}
+
+.home-right {
+  flex: 0 0 50%;
+}
+
+.home-right .bg-main {
+  position: relative;
+}
+
+.home-right .bg-main .img-1 {
+  position: absolute;
+}
+
+.home-right .bg-main .img-2 {
+  position: absolute;
+}
+
+.home-right .bg-main .img-3 {
+  position: absolute;
+}
+
+.home-right .bg-main .img-4 {
+  position: absolute;
+}
+
+.home-right .bg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.text-1 {
+  color: rgb(137, 110, 255);
+  font-size: 16px;
+}
+
+.text-2 {
+  color: rgb(31, 36, 113);
+  font-size: 48px;
+}
+
+.text-3 {
+  margin-top: 25px;
+  color: var(--warna);
+  font-size: 16px;
+}
+
+.btn-Started {
+  display: inline-block;
+  background-color: rgb(137, 110, 255);
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.btn-Started a {
+  color: rgb(254, 254, 255);
+}
+
+.btn-book {
+  display: inline-block;
+  padding-left: 35px;
+  color: rgb(137, 110, 255);
+}
+
+.btn-book a {
+  color: rgb(137, 110, 255);
+}
+
+.home a:hover {
+  font-size: 18px;
+}
+
+.p-btn {
+  margin-top: 25px;
+}
+
+.home-right .img-1 {
+  width: 50px;
+  top: 40%;
+  left: 20%;
+  animation: img-1 7s linear infinite;
+}
+
+.home-right .img-2 {
+  width: 50px;
+  left: 30%;
+  top: 10%;
+  animation: img-2 7s linear infinite;
+}
+
+.home-right .img-3 {
+  width: 50px;
+  top: 40%;
+  right: 20%;
+  animation: img-3 7s linear infinite;
+}
+
+.home-right .img-4 {
+  width: 50px;
+  top: 20%;
+  left: 50%;
+  animation: img-4 7s linear infinite;
+}
+
+.bars {
+  display: none;
+}
+
+#login {
+  display: none;
+}
+
+#try {
+  display: none;
+}
+
+
+@media all and (max-width: 1140px) {
+  .container {
+    margin: 0 50px;
+  }
+
+  .links {
+    width: 45%;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .container {
+    margin: 0 30px;
+  }
+
+  .bars {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 28px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .links1 {
+    display: none;
+  }
+
+  .active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    font-size: 14px;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .active a:hover {
+    font-size: 18px;
+  }
+
+  #login {
+    display: block;
+  }
+
+  #try {
+    display: block;
+  }
+
+  .links-2 {
+    display: none;
+  }
+
+  .home-left {
+    padding: 30px;
+  }
+
+  .home-right {
+    padding: 30px;
+  }
+
+  .text-1 {
+    font-size: 14px;
+  }
+
+  .text-2 {
+    font-size: 28px;
+  }
+
+  .text-3 {
+    font-size: 14px;
+  }
+
+  .btn-Started {
+    font-size: 14px;
+  }
+
+  .btn-book {
+    font-size: 14px;
+  }
+
+  .home-right .img-1 {
+    width: 40px;
+  }
+
+  .home-right .img-2 {
+    width: 40px;
+  }
+
+  .home-right .img-3 {
+    width: 40px;
+  }
+
+  .home-right .img-4 {
+    width: 40px;
+  }
+}
+
+@media all and (max-width: 670px) {
+  .container {
+    margin: 0 10px;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(246, 245, 255);
+    z-index: 999;
+  }
+
+  .bars {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 28px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .links {
+    display: none;
+    font-size: 28px;
+  }
+
+  .active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    font-size: 14px;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .active a:hover {
+    font-size: 18px;
+  }
+
+  #login {
+    display: block;
+  }
+
+  #try {
+    display: block;
+  }
+
+  .links-2 {
+    display: none;
+  }
+
+  .btn-book {
+    display: block;
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .logo h1 {
+    font-size: 16px;
+  }
+
+  #home {
+    padding-top: 80px;
+  }
+
+  .home-left {
+    text-align: center;
+    flex: 100%;
+  }
+
+  .home-right {
+    text-align: center;
+    flex: 100%;
+    width: 100%;
+  }
+
+  .home-right .img-1 {
+    width: 30px;
+  }
+
+  .home-right .img-2 {
+    width: 30px;
+  }
+
+  .home-right .img-3 {
+    width: 30px;
+  }
+
+  .home-right .img-4 {
+    width: 30px;
+  }
+
+}
+
+@keyframes img-1 {
+  0%, 100% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translate(20px, 20px);
+  }
+
+  50% {
+    transform: translate(5px, 5px);
+  }
+
+  75% {
+    transform: translate(20px, -5px);
+  }
+}
+
+@keyframes img-2 {
+  0%, 100% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translate(-10px, -15px);
+  }
+
+  50% {
+    transform: translate(5px, 15px);
+  }
+
+  75% {
+    transform: translate(-20px, -15px);
+  }
+}
+
+@keyframes img-3 {
+  0%, 100% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translate(5px, 20px);
+  }
+
+  50% {
+    transform: translate(15px, 5px);
+  }
+
+  75% {
+    transform: translate(10px, -15px);
+  }
+}
+
+@keyframes img-4 {
+  0%, 100% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translate(30px, 10px);
+  }
+
+  50% {
+    transform: translate(20px, -15px);
+  }
+
+  75% {
+    transform: translate(-5px, 15px);
+  }
+}

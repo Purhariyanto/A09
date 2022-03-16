@@ -1,0 +1,231 @@
+.top-section {
+  display: flex;
+  justify-content: center;
+  font-size: var(--fs);
+}
+
+.footer-section {
+  margin: 50px 20px;
+}
+
+.footer-list p {
+  margin: 0px 0px 7px 0px;
+  color: rgb(121, 121, 122);
+}
+
+.btn {
+  background-color: rgb(187, 187, 187);
+  width: 30px;
+  height: 30px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 15px;
+  opacity: 0.7;
+}
+
+.btn:hover {
+  background-color: rgb(187, 187, 187);
+  opacity: 1;
+}
+
+.bottom-section {
+  text-align: center;
+  font-size: 12px;
+  color: rgb(31, 36, 113);
+  padding: 20px;
+}
+
+/* Create account */
+.img-account {
+  border-radius: 20px;
+  background-image: url("../img/gambar1.png");
+  height: 250px;
+  width: 70%;
+}
+
+.left-item {
+  font-size: var(--fs);
+  padding-top: 60px;
+}
+
+.left-item p {
+  opacity: 0.4;
+  line-height: 2;
+}
+
+.right-item {
+  font-size: var(--fs);
+  padding-top: 10px;
+}
+
+.right-item a {
+  color: rgba(164, 143, 253, 255);
+  font-size: var(--fs);
+  transition: width 2s;
+  transition-timing-function: ease-in;
+}
+
+.right-item a:hover {
+  width: 50px;
+}
+
+.btn-create {
+  background-color: #896eff;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  border: none;
+  box-shadow: -10px 10px 10px #e6e6e7;
+  opacity: 0.7;
+}
+
+.btn-create:hover {
+  background-color: #896eff, 0.5;
+  opacity: 1;
+}
+
+/* Responsive Tablet */
+@media(max-width:1000px) {
+
+  /* Create Accoount */
+  .left-item {
+    float: none;
+    padding-top: 60px;
+  }
+
+  .right-item {
+    float: none;
+    padding-top: 10px;
+  }
+
+  .right-item a {
+    color: rgba(164, 143, 253, 255);
+    font-size: 14px;
+  }
+
+  .btn-create {
+    background-color: #896eff;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    border: none;
+    box-shadow: -10px 10px 10px #e6e6e7;
+    margin: 0px 0px 10px 0px;
+    opacity: 0.7;
+  }
+
+  /* Footer */
+  .top-section {
+    flex-wrap: wrap;
+  }
+
+  hr {
+    width: 18rem;
+    opacity: 0.1;
+    margin-top: 30px;
+  }
+
+  .btn {
+    background-color: rgb(187, 187, 187);
+    width: 30px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 15px;
+    opacity: 0.7;
+  }
+
+  .btn:hover {
+    background-color: rgb(187, 187, 187);
+    opacity: 1;
+  }
+
+  .btn-create:hover {
+    background-color: #896eff, 0.5;
+    opacity: 1;
+  }
+}
+
+/* Responsive HP */
+@media(max-width:670px) {
+
+  /* Create Accoount */
+  .img-account {
+    border-radius: 20px;
+    background-image: url("../img/gambar1.png");
+    height: 20rem;
+    width: 18rem;
+    margin: 0px 0px 50px 0px;
+  }
+
+  .left-item {
+    float: left;
+    margin: 15px 20px 0px 20px;
+  }
+
+  .left-item h1 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .left-item p {
+    text-align: center;
+    margin-bottom: -10px;
+    padding: 10px;
+    font-size: 12px;
+    opacity: 0.4;
+  }
+
+  .right-item a {
+    color: rgba(164, 143, 253, 255);
+    font-size: 14px;
+  }
+
+  .btn-create {
+    background-color: #896eff;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    border: none;
+    box-shadow: -10px 10px 10px #e6e6e7;
+    margin: 20px 0px 10px 0px;
+    opacity: 0.7;
+  }
+
+  /* Footer */
+  .top-section {
+    flex-wrap: wrap;
+  }
+
+  hr {
+    width: 18rem;
+    opacity: 0.1;
+    margin-top: 30px;
+  }
+
+  .btn {
+    background-color: rgb(187, 187, 187);
+    width: 30px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 15px;
+    opacity: 0.7;
+  }
+
+  .btn:hover {
+    background-color: rgb(187, 187, 187);
+    opacity: 1;
+  }
+
+  .btn-create:hover {
+    background-color: #896eff, 0.5;
+    opacity: 1;
+  }
+}

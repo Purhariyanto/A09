@@ -1,0 +1,221 @@
+.container-services {
+  padding: 0 10px;
+}
+
+.kolom-dua {
+  float: left;
+}
+
+.kolom-dua p {
+  font-size: var(--fs);
+  color: var(--warna);
+}
+
+.kolom-dua h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(51, 47, 71);
+  font-size: 35px;
+}
+
+/* .btn-services {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background-color: aliceblue;
+  color: rgba(191, 0, 255, 1.0);
+  font-size: 15px;
+  font-weight: bold;
+} */
+
+.btn-services {
+    background-color:rgb(243, 225, 243);
+    display: inline-block;
+    padding: 0px 10px ;
+    border-radius: 10px;
+    /* height: 30px;
+    width: 100px; */
+    text-align: center;
+    line-height: 30px;
+    color:darkorchid;
+    /* font-weight: bold; */
+    font-size: var(--fs);
+}
+
+.btn-services h2 {
+  font-size: 18px;
+}
+
+.btn-explore {
+  float: right;
+  padding: 15px 15px 15px 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(191, 0, 255, 1.0);
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: var(--fs);
+}
+
+.btn-explore a {
+  text-decoration: none;
+  color: rgba(191, 0, 255, 1.0);
+}
+
+.clear {
+  clear: both;
+}
+
+.container-list {}
+
+#services {
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.kotak-list {
+  display: flex;
+  width: 100%;
+  margin: 30px auto;
+  justify-content: space-between;
+  line-height: 30px;
+}
+
+.kotak {
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 10px;
+  width: 310px;
+  box-sizing: border-box;
+}
+
+.kotak-list .kotak:hover {
+  box-shadow: 0px 0px 10px 10px hsla(0, 0%, 0%, 0.1);
+}
+
+.list {
+  padding: 20px;
+  margin: 0 10px;
+}
+
+.kotak-list p {
+  font-size: var(--fs);
+  color: var(--warna);
+}
+
+.putih {
+  background-color: whitesmoke;
+}
+
+.learn-how {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: var(--fs);
+}
+
+.learn-how a {
+  text-decoration: none;
+  color: rgba(191, 0, 255, 1.0);
+}
+
+.space {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: rgb(71, 66, 94);
+}
+
+@media all and (max-width: 1000px) {
+  .container {
+    margin: 0 30px;
+  }
+
+  #kolom-2{
+    float: none;
+  }
+
+  .kolom-dua {
+    float: none;
+    text-align: center;
+  }
+
+  .kolom-dua h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .kolom-dua p {
+    text-align: center;
+  }
+
+  .btn-explore {
+    float: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .kotak-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kotak {
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 10px;
+    width: 410px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .list {
+    margin: 20px;
+  }
+  #services {
+    height: auto;
+  }
+}
+
+@media all and (max-width: 670px) {
+  .container {
+    margin: 0 10px;
+  }
+
+
+  #kolom-dua {
+    float: none;
+  }
+
+  .kolom-dua h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .kolom-dua p {
+    text-align: center;
+  }
+
+  .btn-explore {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .kotak-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kotak {
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 10px;
+    width: 310px;
+    box-sizing: border-box;
+  }
+
+  .list {
+    margin: 20px;
+  }
+}
